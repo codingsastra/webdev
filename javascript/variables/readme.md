@@ -1,3 +1,5 @@
+### Notes
+
 ### Practice
 
 1. What happens when you print out the value of a variable that you have
