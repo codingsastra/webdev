@@ -73,7 +73,6 @@ var randBetween = function () {
 var isSuit = function () {
 };
 
-
 // The valid ranks for a card are two, three, four, five, six, seven, eight,
 // nine, ten, jack, queen, king and ace. Write a function called `isRank` that
 // accepts a string and returns true if it is a card rank.
