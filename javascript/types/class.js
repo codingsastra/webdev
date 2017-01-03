@@ -40,3 +40,48 @@ console.log(myName.length);//17
 console.log(myName.charAt(6)); //B
 console.log(myName.indexOf("a")); //1
 console.log(myName.lastIndexOf("a")); //14
+
+var age=25;
+
+//Boolean > < == === != !== && ||
+
+//Logical AND
+if(age>10 && age<50)
+{
+  console.log("Yes age is greater");
+}
+else
+{
+  console.log("Yes age is not greater");
+}
+
+
+//Logical OR
+if(age>10 || age>50){
+  console.log("Yes age is greater");
+}
+else {
+  console.log("Yes age is not greater");
+}
+
+console.log(age<=25);
+
+console.log(age>=50);
+
+console.log(age!=25);
+
+var isStudent=true;
+
+if(!isStudent){
+  console.log("This is true")
+}
+else {
+  console.log("This is false")
+}
+
+//== and ===
+console.log(1=="1"); //only compares value
+console.log(1==="1"); //only compares value & type
+
+console.log(1!="1"); //only compares value
+console.log(1!=="1"); //only compares value & type

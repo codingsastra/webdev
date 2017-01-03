@@ -1,7 +1,21 @@
 // Write a function called isDivisibleBy3 which returns `true` if a number is
 // divisible by 3, and `false` otherwise.
-var isDivisibleBy3 = function () {
+var isDivisibleBy3 = function (n) {
+  return (n%3==0);
 };
+
+var isDivisibleBy3_v2 = function (n) {
+  if(n%3==0)
+  {
+    return "Yes it is";
+  }
+  {
+    return "No it is not";
+  }
+};
+
+console.log(isDivisibleBy3(6));
+console.log(isDivisibleBy3(8));
 
 
 // Write a function that converts a Celsius temperature to Fahrenheit,
