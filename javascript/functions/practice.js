@@ -1,7 +1,13 @@
 // (example) Write a function that accepts two number arguments and adds them
 // together.
-var add = function () {
+var add = function (x,y) {
+  return x+y;
 };
+
+var total = add(2,3);
+console.log(total);
+var total45=add(4,5);
+
 
 
 // Create a function that takes in a cost and a quantity and outputs the total
@@ -9,8 +15,13 @@ var add = function () {
 //
 //     var preTaxTotal = totalCost(5, 5.99); // 5 items at 5.99
 //     //=> 29.950000000000003
-var totalCost = function () {
+var totalCost = function (qty,cost) {
+  return qty * cost;
 };
+
+var totalItemCost=totalCost(4,3.5);
+console.log(totalItemCost);
+
 
 
 // Write a function that takes a rank and a suit as input, and returns a string
