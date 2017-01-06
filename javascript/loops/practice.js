@@ -17,9 +17,11 @@
 //    isVowel("Y");
 //    //=> false
 //
-var isVowel = function () {
+var isVowel = function (x) {
+  return "aeiou".indexOf(x.toLowerCase())>=0;
 };
 
+console.log(isVowel("A"));
 
 // Write a function called `isLowerCaseLetter` that returns `true` if
 // the input is a single letter and lower-case. It should return false otherwise.

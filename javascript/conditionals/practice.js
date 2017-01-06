@@ -111,8 +111,25 @@ var isQuestion = function () {
 //
 //     magic8Ball("Is this a question?");
 //     //=> Signs point to yes
-var magic8Ball = function () {
+var magic8Ball = function (question) {
+  var answers=["Very doubtful","My reply is no","Signs point to yes"];
+
+  var q=question.slice(question.length-1,question.length);
+
+  if(q != "?")
+  {
+    throw "THAT DOESN'T SOUND LIKE A QUESTION!"
+  }
+  else
+  {
+    var random = Math.floor(Math.random() * 3);
+    return answers[random];
+  }
 };
+
+console.log(magic8Ball("Will people like this problem?"));
+
+console.log(magic8Ball("you are bad"));
 
 
 // Suppose we wanted to randomly interject "-lol-" or "-omg-" into a random
@@ -161,10 +178,3 @@ var interjectAt = function () {
 // function with the appropriate arguments.
 var randomInterject = function () {
 };
-
-
-
-
-
-
-
