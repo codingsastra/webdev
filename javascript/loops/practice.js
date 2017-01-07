@@ -151,8 +151,20 @@ var reverseString = function () {
 //     isPrime(-101);
 //     //=> false
 //
-var isPrime = function () {
+var isPrime = function (n) {
+  if(n===1 || typeof(n) !== "number" || n<1){
+    return false;
+  }
+
+  for(var p=n-1;p>1;p--){
+    if(n%p===0){
+      return false;
+    }
+  }
+
+  return true;
 };
+
 
 
 // Using the `isPrime` function, write a function that accepts a number as
