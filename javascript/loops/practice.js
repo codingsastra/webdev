@@ -185,7 +185,8 @@ var isPrime = function (n) {
 //     sumPrimesUpTo("whatever");
 //     //=> input should be a number
 //
-var sumPrimesUpTo = function () {
+var sumPrimesUpTo = function (n) {
+
 };
 
 
@@ -211,6 +212,7 @@ var sumPrimesUpTo = function () {
 //     //=> input number should be zero or a positive number!
 //
 var sumOfFirstNPrimes = function () {
+  
 };
 
 

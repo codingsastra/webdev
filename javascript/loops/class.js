@@ -59,3 +59,15 @@ for(var s=0;s<hello.length;s++)
 {
   console.log(hello.charAt(s));
 }
+
+var isVowel = function (x) {
+  if(x.length == 1){
+    var vowels = ["a","e","i","o","u"];
+    for (i=0;i<vowels.length;i++){
+        if(vowels[i] == x.toLowerCase()){
+          return true;
+        }
+    }
+      return false;
+  }
+}

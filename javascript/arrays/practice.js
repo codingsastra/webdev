@@ -197,5 +197,22 @@ var mapToTags = function () {
 //     filterToLol(["this is a string", false, 5]);
 //     //=> all entries must be strings!
 //
-var filterToLol = function () {
+var filterToLol = function (tweets) {
+  if(Array.isArray(tweets)){
+    var allStrings=tweets.every(function(tweet){
+      return typeof(tweet) === "string"
+    });
+
+    if(!allStrings){
+      throw "All tweets must be strings";
+    }
+
+    return tweets.filter(function(tweet){
+      return tweet.toLowerCase().indexOf("lol")>=0;
+    })
+
+  }
+  else {
+    throw "Argument must be array";
+  }
 };

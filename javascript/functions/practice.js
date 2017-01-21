@@ -8,6 +8,10 @@ var total = add(2,3);
 console.log(total);
 var total45=add(4,5);
 
+var i=10;
+var j=3;
+var newTotal=add(i,j);
+
 
 
 // Create a function that takes in a cost and a quantity and outputs the total
